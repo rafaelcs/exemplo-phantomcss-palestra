@@ -1,7 +1,7 @@
 install:
-	- git clone git://github.com/n1k0/casperjs.git
-	- cd casperjs; git checkout tags/1.1; cd -
+ - git clone git://github.com/n1k0/casperjs.git
+ - cd casperjs; git checkout tags/1.1; cd -
 before_script:
-	- cd exemplo-phantomcss-tdc2014
+ - cd exemplo-phantomcss-tdc2014
 script:
-	- ../casperjs/bin/casperjs test testes/teste.js 
+ - ../casperjs/bin/casperjs test testes/teste.js
