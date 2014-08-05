@@ -3,3 +3,4 @@ install:
  - cd casperjs; git checkout tags/1.1-beta3; pwd; cd -
 script:
  - casperjs/bin/casperjs test testes/teste.js
+ - casperjs/bin/casperjs test testes/teste.js
