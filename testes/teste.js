@@ -31,23 +31,23 @@ phantomcss.init(
 
 
 /*
-	The test scenario
+	Cenario de teste
 */
 casper.start( './testes/maquinadecafe.html' );
 
 casper.viewport(1024, 768);
 
 casper.then(function(){
-	phantomcss.screenshot('body', '1 - Botão da máquina de café');
+	phantomcss.screenshot('body', '1 - Botao da maquina de cafe');
 });
 
 casper.then(function(){
 	casper.click('#btn-maquina-cafe');
 	
-	// wait for modal to fade-in 
+	// aguarda modal aparecer 
 	casper.waitForSelector('#modal:not([style*="display: none"])',
 		function(){
-			phantomcss.screenshot('#modal', '2 - Janela da máquina de café');
+			phantomcss.screenshot('#modal', '2 - Janela da maquina de cafe');
 		}
 	);
 });
@@ -60,16 +60,16 @@ casper.then(function(){
 casper.then(function(){
 	casper.click('#fechar');
 
-	// wait for modal to fade-out
+	// aguarda modal desaparecer
 	casper.waitForSelector('#modal[style*="display: none"]',
 		function(){
-			phantomcss.screenshot('body', '4 - Máquina de café fechada com sucesso');
+			phantomcss.screenshot('body', '4 - Maquina de cafe fechada com sucesso');
 		}
 	);
 });
 
 casper.then( function comparar_screenshots(){
-	// compare screenshots
+	// compara screenshots
 	phantomcss.compareAll();
 });
 
@@ -84,4 +84,3 @@ casper.run(function(){
 	console.log('\nTHE END.');
 	phantom.exit(phantomcss.getExitStatus());
 });
-
