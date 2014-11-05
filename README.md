@@ -1,6 +1,6 @@
 # exemplo-phantomcss-tdc2014
 
-Fork do repositório do PhantomCSS contendo exemplo de código para a palestra _Visual Regression Testing com PhantomCSS_, apresentada na trilha de Testes do evento [The Developer's Conference 2014 São Paulo](http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-testes)
+Fork do repositório do PhantomCSS contendo exemplo de código para a palestra _Visual Regression Testing com PhantomCSS_, apresentada na trilha de Testes do evento [The Developer's Conference 2014 São Paulo](http://www.thedevelopersconference.com.br/tdc/2014/saopaulo/trilha-testes) e no [Agile Brazil 2014](http://www.agilebrazil.com/2014/)
 
 ## Setup
 
